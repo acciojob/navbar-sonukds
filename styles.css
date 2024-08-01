@@ -1,1 +1,60 @@
 /*  your css code here. If applicable */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #6e072d;
+    color: white;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul.nav-left {
+    margin-left: 0;
+}
+
+.navbar ul.nav-right {
+    margin-right: 0;
+}
+
+.navbar ul li {
+    padding: 18px 27px; /* Vertical padding is font size (18px), horizontal padding is 1.5 * font size (27px) */
+    font-size: 18px;
+    cursor: pointer;
+    border-right: 2px solid white;
+}
+
+.navbar ul.nav-left li:last-child {
+    border-right: none; /* No border on the right side of the last item in the left list */
+}
+
+.navbar ul.nav-right li:first-child {
+    border-left: 2px solid white; /* Border on the left side of the first item in the right list */
+    border-right: none; /* No border on the right side of the first item in the right list */
+}
+
+.navbar ul.nav-right li:last-child {
+    border-left: 2px solid white; /* Border on the left side of the last item in the right list */
+    border-right: none; /* No border on the right side of the last item in the right list */
+}
+
+.navbar ul li:hover {
+    background-color: #b90e4d;
+}
+
+
+
